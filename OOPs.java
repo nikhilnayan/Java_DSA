@@ -33,14 +33,21 @@ class B extends A {
 
     @Override
     public void display() {
-
         System.out.println("Class-B is displaying");
     }
 }
 
 public class OOPs {
     public static void main(String args[]) {
+
+        A objA = new A(10, 20);
+        objA.display();
+
+        A objA2 = new B(10, 20, 3.14f, 10.08f);
+        objA2.display();
+
         B objB = new B(10, 20, 3.14f, 10.08f);
+        objB.display();
 
         System.out.println(objB.add(objB.var1, objB.var2));
         System.out.println(objB.add());
