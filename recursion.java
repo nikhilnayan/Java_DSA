@@ -7,7 +7,16 @@ public class recursion {
         System.out.println("--" + times+ "--");
     }
 
+    public static int fib(int term){
+        if(term ==0) return 0;
+        if(term ==1) return 1;
+
+        return fib(term-1) + fib(term-2);
+    }
+
     public static void main(String[] args) {
         show(10);
+
+        fib(9);
     }
 }
