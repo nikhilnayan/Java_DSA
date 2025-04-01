@@ -27,7 +27,7 @@ public class stack {
         return toDeleted.data;
     }
 
-    public int peek(){
+    public int peek() {
         return top.data;
     }
 
